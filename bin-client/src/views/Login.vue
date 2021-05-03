@@ -29,7 +29,6 @@ export default {
     async login() {
       try {
         UserService.login(this.user).then((user) => {
-          console.log(user);
           this.setUser(user);
           this.$router.push('Profile');
         }).catch((e)=>{console.error(e)});

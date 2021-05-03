@@ -37,7 +37,6 @@ export default {
           if (Object.keys(newAccount).includes('errors')){
             this.status = newAccount.errors.message;
           } else {
-            console.log(newAccount)
             this.setUser(newAccount)
             this.$router.push('Home');
           }
