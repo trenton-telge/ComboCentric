@@ -1,2 +1,3 @@
 # Project exclude paths
 /bin/node_modules/
+/bin/src/mongooseConnection.js
