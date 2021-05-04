@@ -8,6 +8,7 @@ import Profile from "../views/Profile.vue";
 import Admin from "../views/Admin.vue";
 import MakePost from "@/views/MakePost";
 import FAQ from "@/views/FAQ";
+import Combo from "@/views/Combo";
 Vue.use(Vuex);
 Vue.use(VueRouter);
 const routes = [
@@ -46,6 +47,11 @@ const routes = [
         path: '/faq',
         name: 'FAQ',
         component: FAQ
+    },
+    {
+        path: '/combo/:id',
+        name: 'Combo',
+        component: Combo
     }
 ];
 

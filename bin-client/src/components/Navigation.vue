@@ -1,12 +1,12 @@
 <template>
   <nav class="fw">
-    <router-link to="Home">Home</router-link>
-    <router-link v-if="!getUser.user" to="Register">Register</router-link>
-    <router-link v-if="!getUser.user" to="Login">Log In</router-link>
-    <router-link v-if="getUser.user != null" to="Profile">{{ getUser.user.firstName }}</router-link>
+    <router-link to="../Home">Home</router-link>
+    <router-link v-if="!getUser.user" to="../Register">Register</router-link>
+    <router-link v-if="!getUser.user" to="../Login">Log In</router-link>
+    <router-link v-if="getUser.user != null" to="../Profile">{{ getUser.user.firstName }}</router-link>
     <p v-if="getUser.user != null" v-on:click="logOut">Log Out</p>
-    <router-link v-if="getUser.user != null && getUser.user.email === 'darkforce102@gmail.com'" to="Admin">Admin</router-link>
-    <router-link v-if="getUser.user != null" to="MakePost">Post Combo</router-link>
+    <!--<router-link v-if="getUser.user != null && getUser.user.email === 'darkforce102@gmail.com'" to="Admin">Admin</router-link>-->
+    <router-link v-if="getUser.user != null" to="../MakePost">Post Combo</router-link>
   </nav>
 </template>
 
@@ -25,7 +25,6 @@ export default {
     ...mapGetters(['getUser'])
   },
   mounted() {
-    //console.log(this.getUser.user)
   }
 }
 </script>

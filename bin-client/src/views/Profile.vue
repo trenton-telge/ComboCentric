@@ -1,6 +1,6 @@
 <template>
   <div class="registration mid-width">
-    <div v-if="getUser.user">
+    <div v-if="this.getUser.user">
       <h4>Edit Profile</h4>
       <b-form @submit.prevent="update">
         <b-form-input v-model="user.firstName" id="firstName" name="firstName" :placeholder="autofill.firstName"></b-form-input>
@@ -92,18 +92,18 @@ export default {
 </script>
 
 <style scoped>
-.mid-width {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-h4 {
-  margin-top: 20px;
-  width: 100%;
-}
-input, button {
-  margin-top: 10px;
-  width: 600px;
-}
+  .mid-width {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h4 {
+    margin-top: 20px;
+    width: 100%;
+  }
+  input, button {
+    margin-top: 10px;
+    width: 600px;
+  }
 </style>

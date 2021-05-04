@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Welcome to ComboCentric, {{ getUser.user.firstName }}</h2>
+    <h2>Welcome to ComboCentric, {{ this.getUser.user.firstName }}</h2>
   </div>
 </template>
 
